@@ -1,0 +1,14 @@
+package com.example.demo.service;
+
+
+import com.example.demo.model.User;
+
+import java.util.List;
+
+public interface UserService {
+    List<User> getAllUsers();
+    int addUser(User user);
+    User getUserByPhoneNumber(String Number);
+    int updateUser(User user);
+    int updateUserBaseInfo(User user);
+}
